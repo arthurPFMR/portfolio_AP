@@ -10,12 +10,13 @@ const Career = () => {
         <div className="careerImg">{/* <img src={aboutImg} alt="" /> */}</div>
         <div className="careerText">
           Je m’appelle Arthur, j’ai 36 ans, titulaire d’un titre RNCP de niveau
-          IV Développeur Web. Je souhaite poursuivre mon apprentissage dans le
-          domaine du développement Web par le biais de l’alternance. Après avoir
-          exercé dans diverses métiers (BTP, technicien dans l’événementiel,
+          IV Développeur Web. <br /> 
+          Après avoir exercé dans diverses métiers (BTP, technicien dans l’événementiel,
           agro-alimentaire) j’ai entrepris une reconversion professionnelle via
           OpenClassrooms afin de me permettre de démarrer une nouvelle carrière
-          dans un domaine qui me passionne.
+          dans un domaine qui me passionne. <br />
+          Dans le soucis de me perfectionner techniquement, en bonnes pratiques et en collaboration agile, 
+          je recherche un contrat en alternance en tant que développeur Front End.
         </div>
       </div>
       <h3>HARDSKILLS :</h3>
@@ -24,15 +25,15 @@ const Career = () => {
         <div className="valueGraph">
           <div className="HTML">
             <div className="textValue">HTML5</div>
-            <svg viewBox="0 0 36 36" class="circle-svg">
+            <svg viewBox="0 0 36 36" className="circle-svg">
               <path
-                class="around"
-                stroke-dasharray="100, 100"
+                className="around"
+                strokeDasharray="100, 100"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               ></path>
               <path
-                class="percent"
-                stroke-dasharray="85, 100"
+                className="percent"
+                strokeDasharray="85, 100"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               ></path>
             </svg>
@@ -41,15 +42,15 @@ const Career = () => {
         <div className="valueGraph">
           <div className="CSS">
             <div className="textValue">CSS3</div>
-            <svg viewBox="0 0 36 36" class="circle-svg">
+            <svg viewBox="0 0 36 36" className="circle-svg">
               <path
-                class="around"
-                stroke-dasharray="100, 100"
+                className="around"
+                strokeDasharray="100, 100"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               ></path>
               <path
-                class="percent"
-                stroke-dasharray="75, 100"
+                className="percent"
+                strokeDasharray="75, 100"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               ></path>
             </svg>
@@ -58,15 +59,15 @@ const Career = () => {
         <div className="valueGraph">
           <div className="JS">
             <div className="textValue">JS</div>
-            <svg viewBox="0 0 36 36" class="circle-svg">
+            <svg viewBox="0 0 36 36" className="circle-svg">
               <path
-                class="around"
-                stroke-dasharray="100, 100"
+                className="around"
+                strokeDasharray="100, 100"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               ></path>
               <path
-                class="percent"
-                stroke-dasharray="50, 100"
+                className="percent"
+                strokeDasharray="50, 100"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               ></path>
             </svg>
@@ -75,15 +76,15 @@ const Career = () => {
         <div className="valueGraph">
           <div className="REACT">
             <div className="textValue">REACT</div>
-            <svg viewBox="0 0 36 36" class="circle-svg">
+            <svg viewBox="0 0 36 36" className="circle-svg">
               <path
-                class="around"
-                stroke-dasharray="100, 100"
+                className="around"
+                strokeDasharray="100, 100"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               ></path>
               <path
-                class="percent"
-                stroke-dasharray="60, 100"
+                className="percent"
+                strokeDasharray="60, 100"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               ></path>
             </svg>

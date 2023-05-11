@@ -1,4 +1,5 @@
 $colorTouch: rgb(20, 118, 94);
+$notRealBlack: rgb(35, 35, 35);
 
 @font-face {
     font-family: Azonix;
@@ -9,6 +10,10 @@ $colorTouch: rgb(20, 118, 94);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -56,8 +61,8 @@ a {
 
 
 
-@media (min-width: 992px) {
-    html {
-        overflow-y: hidden;
-    }
-}
+// @media (max-width: 450px) {
+//     html {
+//         overflow-x: hidden;
+//     }
+// }

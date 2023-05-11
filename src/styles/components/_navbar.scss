@@ -33,6 +33,7 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2%;
     color: white;
     width: 100%;
@@ -42,8 +43,7 @@
 
     .leftContainer {
         display: flex;
-        align-items: center;
-        gap: 10px;
+        gap: 1.5vw;
         width: 100%;
 
         img {
@@ -60,7 +60,7 @@
     .rightContainer {
         width: 100%;
 
-        .menu {
+        .navbarLinks {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -69,17 +69,18 @@
     }
 }
 
-.hamburger {
-    z-index: 9999;
-    display: none;
-    float: right;
-    height: 55px;
-    width: 55px;
-}
-
 li:hover {
     background-color: $colorTouch;
     cursor: pointer;
+}
+
+.navbarBurger {
+    display: none;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: none;
+    color: white;
 }
 
 // responsive_______________________________________
@@ -87,31 +88,98 @@ li:hover {
 
     .navbar {
         .rightContainer {
-
-            .menu {
+            .navbarLinks {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10%;
+                position: fixed;
+                right: -100vw;
+                bottom: 0;
+                height: 100vh;
+                width: 100%;
+                padding: 2rem;
+                background-color: $notRealBlack;
+                visibility: hidden;
                 display: none;
+
+                & :hover {
+                    color: $colorTouch;
+                    background-color: transparent;
+                }
+
+                .showNav, .navbarLink {
+                    right: 0;
+                    width: 100vw;
+                    visibility: visible;
+                    margin-right: 50vw;
+                    color: aqua;
+                    z-index: 9999;
+                }
+
+                .navbarLink {
+                    display: block;
+                    padding: 1.5rem;
+                    font-size: 5vw;
+                }
             }
-            
+
             .marquee-rtl {
                 display: none;
             }
+        }
 
-            .hamburger {
-                position: relative;
-                z-index: 9999;
-                display: block;
+        .navbarBurger {
+            display: block;
+            position: fixed;
+            padding-right: 8%;
+            right: 0;
 
-                &:hover {
-                    color: $colorTouch;
-                }
+            &:hover {
+                cursor: pointer;
             }
+
+            .burgerBar,
+            .burgerBar::before,
+            .burgerBar::after {
+                display: block;
+                position: relative;
+                width: 40px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: white;
+
+            }
+
+            .burgerBar,
+            .burgerBar::before,
+            .burgerBar::after {
+                content: "";
+                position: absolute;
+                // left: 0;
+            }
+
+            .burgerBar::before {
+                transform: translateY(-12px);
+            }
+
+            .burgerBar::after {
+                transform: translateY(12px);
+            }
+
         }
     }
+
+
+
     .bloc {
         display: none;
+        width: 0;
     }
+
     .marquee-rtl {
         display: none;
+        width: 0;
         font-size: 0;
     }
 }
@@ -123,25 +191,25 @@ li:hover {
 
         .leftContainer {
             margin-top: 1%;
+
             img {
                 height: 3vh;
             }
+
             h1 {
                 font-size: smaller;
             }
         }
-    }
 
-    .hamburger {
-        height: 30px;
-        width: 30px;
-        margin-right: 10%;
+        .navbarBurger {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
-@media (max-width: 768px) {
-
-    .hamburger {
-    margin-top: -2%;
+@media (max-width: 450px) {
+    .navbarBurger {
+        margin-right: 25%;
     }
 }

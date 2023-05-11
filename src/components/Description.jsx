@@ -8,8 +8,7 @@ const Description = () => {
       <div className="left">
         <p className="descripionPartOne">DÉVELOPPEUR</p>
         <p className="descripionPartTwo margin">WEB</p>
-        <p className="descripionPartThree margin">
-          FRONTEND
+        <p className="descripionPartThree margin">FRONTEND</p>
           <div className="roller">
             <span className="rolltext">
               CONSCIENCIEUX
@@ -17,13 +16,12 @@ const Description = () => {
               CRÉATIF
               <br />
               CALME
-              <br />
+              <br /> 
               ÉSPRIT D'ÉQUIPE
               <br />
               <span className="sentence">Sensible à l'UX DESIGN</span>
             </span>
           </div>
-        </p>
       </div>
       <div className="right">
         <img src={bioImg} alt="Portrait" />
