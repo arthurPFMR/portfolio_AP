@@ -1,0 +1,63 @@
+$colorTouch: rgb(20, 118, 94);
+
+@font-face {
+    font-family: Azonix;
+    src: url(../assets/fonts/Azonix.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    background-color: rgb(0, 0, 0);
+}
+
+h2,
+h3 {
+    padding-left: 2%;
+    font-family: Azonix;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.noise {
+    display: flex;
+    flex-direction: column;
+    gap: 25vh;
+
+    &::before {
+        position: absolute;
+        height: 400%;
+        width: 100%;
+        content: "";
+        opacity: .155;
+        background: url("../assets/images/noise.gif");
+        z-index: -9999;
+    }
+}
+
+
+.barForTitle {
+    border: solid 1px;
+    margin-left: 1.5%;
+    width: 95%;
+}
+
+
+
+@media (min-width: 992px) {
+    html {
+        overflow-y: hidden;
+    }
+}

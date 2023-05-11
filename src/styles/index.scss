@@ -1,0 +1,14 @@
+// default CSS____________________________
+@import "./settings";
+@import "./animations";
+
+// pages CSS______________________________
+@import "./pages/home";
+@import "./pages/portfolio";
+@import "./pages/career";
+@import "./pages/contact";
+
+// components CSS_________________________
+@import "./components/navbar";
+@import "./components/description";
+@import "./components/slideshow";

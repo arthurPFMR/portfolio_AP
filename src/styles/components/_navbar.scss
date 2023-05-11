@@ -1,0 +1,147 @@
+.top {
+    display: flex;
+    flex-direction: column;
+
+
+    .bloc {
+        position: fixed;
+        background-color: $colorTouch;
+        height: 3vh;
+        width: 100%;
+        z-index: 9999;
+        margin-top: 10vh;
+    }
+
+    .marquee-rtl {
+        position: fixed;
+        margin-top: 10.5vh;
+        display: inline-block;
+        text-align: center;
+        padding-left: 100%;
+        z-index: 9999;
+        color: white;
+        width: 175%;
+        white-space: nowrap;
+        letter-spacing: 0.5rem;
+        height: 3vh;
+        animation: defilement-rtl 15s infinite linear;
+    }
+}
+
+.navbar {
+    font-family: Azonix;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(35, 35, 35);
+    z-index: 9999;
+
+    .leftContainer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+        img {
+            max-width: 80px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .rightContainer {
+        width: 100%;
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 3%;
+        }
+    }
+}
+
+.hamburger {
+    z-index: 9999;
+    display: none;
+    float: right;
+    height: 55px;
+    width: 55px;
+}
+
+li:hover {
+    background-color: $colorTouch;
+    cursor: pointer;
+}
+
+// responsive_______________________________________
+@media (max-width: 992px) {
+
+    .navbar {
+        .rightContainer {
+
+            .menu {
+                display: none;
+            }
+            
+            .marquee-rtl {
+                display: none;
+            }
+
+            .hamburger {
+                position: relative;
+                z-index: 9999;
+                display: block;
+
+                &:hover {
+                    color: $colorTouch;
+                }
+            }
+        }
+    }
+    .bloc {
+        display: none;
+    }
+    .marquee-rtl {
+        display: none;
+        font-size: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 5vh;
+
+        .leftContainer {
+            margin-top: 1%;
+            img {
+                height: 3vh;
+            }
+            h1 {
+                font-size: smaller;
+            }
+        }
+    }
+
+    .hamburger {
+        height: 30px;
+        width: 30px;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+    margin-top: -2%;
+    }
+}

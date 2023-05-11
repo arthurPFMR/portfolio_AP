@@ -1,0 +1,97 @@
+.career {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    z-index: 1;
+    color: white;
+    padding-top: 5%;
+
+    .careerContent {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 3%;
+        margin-top: 2%;
+    }
+
+    .careerText {
+        width: 60%;
+        line-height: 1.5rem;
+        padding-left: 2%;
+    }
+
+    h3 {
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+    .smallBar {
+        border: solid 2px $colorTouch;
+        width: 20%;
+        margin-left: 1%;
+    }
+
+    .skillsValue {
+        padding-top: 5%;
+        padding-left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        max-width: 90%;
+    }
+
+    .valueGraph {
+        text-align: center;
+
+        .textValue {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            color: white;
+        }
+
+        .circle-svg {
+            margin: 10px auto;
+            width: 30vh;
+            padding: 10%;
+
+        }
+
+        .circle-svg path.percent {
+            stroke: $colorTouch;
+            fill: none;
+            stroke-width: 4;
+            stroke-linecap: round;
+        }
+
+        .circle-svg path.around {
+            stroke: #c4c4c45e;
+            fill: none;
+            stroke-width: 4;
+        }
+    }
+}
+
+
+// responsive_____________________________________
+
+@media (max-width: 1192px) {
+    .carrer {
+        h3 {
+            margin-top: 30%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .carrer {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .careerText {
+        font-size: x-small;
+        width: 90%;
+    }
+}

@@ -1,0 +1,10 @@
+.portfolio {
+    color: white;
+    padding-top: 5%;
+}
+
+@media (max-width: 992px) {
+    .portfolio {
+        height: 40vh;
+    }
+}

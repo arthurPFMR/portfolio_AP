@@ -1,0 +1,54 @@
+.description {
+    font-family: Azonix;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding-left: 2%;
+    font-size: 7vw;
+    font-weight: 700;
+    padding-top: 20%;
+    z-index: 9999;
+
+    .descripionPartTwo {
+        color: $colorTouch;
+    }
+
+    img {
+        max-width: 22vw;
+        margin-top: 2vh;
+        margin-left: 13vw;
+        border: solid $colorTouch;
+    }
+
+
+    .left {
+
+        .roller {
+            position: relative;
+            padding-left: 0.5rem;
+            font-size: 1.8vw;
+            height: 5rem;
+            line-height: 4.2rem;
+            overflow: hidden;
+            width: 100%;
+            letter-spacing: 20px;
+            opacity: 0.6;
+        }
+
+        .sentence {
+            font-size: 1.3vw;
+            font-weight: 900;
+            font-style: italic;
+            letter-spacing: 0.5rem;
+            color: $colorTouch;
+            opacity: 1;
+
+        }
+
+        .roller .rolltext {
+            position: absolute;
+            top: 0;
+            animation: slide 7s infinite;
+        }
+    }
+}

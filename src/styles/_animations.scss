@@ -1,0 +1,31 @@
+// animation for description text________________
+@keyframes slide {
+    0% {
+      top: 0;
+    }
+  
+    20% {
+      top: -4rem;
+    }
+  
+    40% {
+      top: -8rem;
+    }
+  
+    60% {
+      top: -12rem;
+    }
+  
+    72.5% {
+      top: -16.25rem;
+    }
+  }
+
+  @keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0);
+    }
+    100% {
+      transform: translate3d(-100%,0,0);
+    }
+  }
